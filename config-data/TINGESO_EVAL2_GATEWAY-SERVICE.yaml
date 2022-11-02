@@ -8,6 +8,6 @@ spring:
           enabled: true
       routes:
         - id: TINGESO_EVAL2_TDISSE-1
-          uri: http://localhost:8082/marca/
+          uri: http://localhost:8082/marca/cargarMarca
           predicates:
-            - Path=/marca/**
+            - Path=/marca/cargarMarca
