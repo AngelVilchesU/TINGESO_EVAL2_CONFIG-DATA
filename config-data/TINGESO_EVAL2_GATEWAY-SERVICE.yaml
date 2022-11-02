@@ -7,7 +7,7 @@ spring:
         locator:
           enabled: true
       routes:
-      - id: TINGESO_EVAL2_TDISSE-1
-        uri: lb://TINGESO_EVAL2_TDISSE-1
-        predicates:
-        - Path=/marca/cargarMarca
+        - id: TINGESO_EVAL2_TDISSE-1
+          uri: http://localhost:8082/marca/cargarMarca
+          predicates:
+            - Path=/marca/cargarMarca
