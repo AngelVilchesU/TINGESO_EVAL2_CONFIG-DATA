@@ -1,0 +1,13 @@
+server:
+  port: 8083
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: TINGESO_EVAL2_TDISSE-1
+          uri: lb://TINGESO_EVAL2_TDISSE-1
+          predicates:
+            - Path=/marca/cargarMarca
