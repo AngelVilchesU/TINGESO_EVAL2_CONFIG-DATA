@@ -2,7 +2,7 @@ server:
   port: 8085
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/tingeso
+    url: jdbc:mysql://localhost:3306/autorizacion
     username: root
     password: 4892
   jpa:
