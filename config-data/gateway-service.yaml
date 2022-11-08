@@ -16,7 +16,7 @@ spring:
           predicates:
             - Path=/autorizacion/ingresarAutorizacion
         - id: justificativo-service
-          uri: http://localhost:8084/justificativo/ingresarJustificativo
+          uri: http://localhost:8084
           predicates:
-            - Path=/justificativo/ingresarJustificativo
+            - Path=/justificativo/**
 
