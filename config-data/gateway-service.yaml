@@ -7,7 +7,7 @@ spring:
         locator:
           enabled: true
       routes:
-     	- id: marca-service
+        - id: marca-service
           uri: http://localhost:8082/marca/ingresarmarca
           predicates:
             - Path=/marca/ingresarmarca
