@@ -7,10 +7,14 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: marcas-service
-          uri: http://localhost:8082/marca/cargarMarca
+     	- id: marca-service
+          uri: http://localhost:8082/marca/ingresarmarca
           predicates:
-            - Path=/marca/cargarMarca
+            - Path=/marca/ingresarmarca
+        - id: marcas-service
+          uri: http://localhost:8085/autorizacion/ingresarAutorizacion
+          predicates:
+            - Path=/autorizacion/ingresarAutorizacion
         - id: justificativo-service
           uri: http://localhost:8084/justificativo/ingresarJustificativo
           predicates:
