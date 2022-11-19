@@ -2,9 +2,9 @@ server:
   port: 8086
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/planilla
-    username: root
-    password: 4892
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
